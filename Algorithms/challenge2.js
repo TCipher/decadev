@@ -7,8 +7,8 @@
 // divisible([5,8,6,12]) to return 0
 
 function divisible(a){
-    let noOfElements = a.filter(num => num % 2 === 0 && num > 15)
-    console.log(noOfElements.length)
+   elements = a.filter( num => num% 2 === 0 && num > 15)
+   console.log(elements.length)
 }
 divisible([2,3,12,18,42,24]) 
  divisible([100,84,37])

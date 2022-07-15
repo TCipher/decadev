@@ -7,12 +7,10 @@
 // Naira bills the ATM needs to dispense (in that order) in an array.
 
 function withdraw(amount){
-    let noOfHundreds = Math.floor(amount/100)
-    let noOfFifties  = Math.floor((amount - (noOfHundreds * 100))/50)
-    let noOfTwenties = Math.floor((amount -((noOfHundreds * 100)+ (noOfFifties * 50)))/20)
-
-    console.log([noOfHundreds,noOfFifties,noOfTwenties])
-
+   let noHundred = Math.floor(amount/100)
+   let noFifty = Math.floor((amount - noHundred * 100)/50) 
+   let noTwenty = Math.floor((amount  - (noHundred * 100) - (noFifty * 50))/20)
+   console.log(noHundred,noFifty,noTwenty)
 }
 
 withdraw(250)

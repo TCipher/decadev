@@ -6,5 +6,16 @@
 //  and false if it is not
 
 function checkPrime(num) {
-    return num % 2 !== 0 || num === 2;
+    //return (num % 2 == 0)?false: num >= 2;
+    for (i = 2; i < num; i++) 
+    if (num % i == 0) return false;
+  return num >= 2; 
   }
+//   for (var i = 2; i < num; i++) if (num % i == 0) return false;
+//   return num >= 2; 
+// }
+  console.log(checkPrime(3))
+  console.log(checkPrime(5))
+  console.log(checkPrime(7))
+  console.log(checkPrime(11))
+  console.log(checkPrime(21))

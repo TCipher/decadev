@@ -13,17 +13,16 @@
 // ```
 // ```
 // Input: "4567"
-// Output: 60296
+// Output: 7537
 // ``` 
 function BinaryReversal(value){
-let num = parseInt(value)
+let  num = parseInt(value)
 let binaryNum = num.toString(2)
 
-    let padded = binaryNum.padStart(8,0)
-    let reversed = padded.split('').reverse().join('')
-    let binaryDecimal = parseInt(reversed,2)
-    console.log(binaryDecimal)
-
+let padded = binaryNum.padStart(8,0)
+let reversed = padded.split('').reverse().join('')
+let binaryToDecimal = parseInt(reversed,2)
+console.log(binaryToDecimal)
 }
 BinaryReversal(47)
 BinaryReversal(213)

@@ -8,10 +8,8 @@
 // noOfElements([4,6,2,6,7,7], 0, 7) to return 6
 
 function noOfElements(x,y,z){
-let noOfvalue = x.filter(x => x >= y && x <= z)
-
-return (noOfvalue.length)
-//console.log(noOfvalue.length)
+let elements = x.filter(values => values >= y && values <= z)
+console.log(elements.length)
 
 }
 

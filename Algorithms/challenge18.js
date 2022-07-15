@@ -3,12 +3,15 @@
 // returns the sum of the array values as if all were numbers.
 
 function sumMix(arr){
-const allNum = []
-const num = arr.filter(values => typeof values === 'number')
-const strToNum = arr.filter(values => typeof values !== 'number').map(a => Number(a))
-allNum.push(...num,...strToNum)
+// const allNum = []
+// const num = arr.filter(values => typeof values === 'number')
+// const strToNum = arr.filter(values => typeof values !== 'number').map(a => Number(a))
+// allNum.push(...num,...strToNum)
 
-const z = 0
-let sumTotal = allNum.reduce((a,b) => a + b, z)
-return sumTotal
+// const z = 0
+// let sumTotal = allNum.reduce((a,b) => a + b, z)
+// return sumTotal
+let num = arr.map(values => Number(values))
+        num = num.reduce((a,b) => a+ b)
+       return num
 }

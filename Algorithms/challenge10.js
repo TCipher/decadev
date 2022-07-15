@@ -13,14 +13,14 @@ function missingNumber(numArr){
     let num = [1,2,3,4,5,6,7,8,9]
     let missingValue = num.filter(values => !numArr.includes(values))
         if(missingValue.length === 1){
-
-           // return missingValue[0]
-           console.log(missingValue[0])
+        return missingValue[0]
+           //console.log(missingValue[0])
         }else if(missingValue.length > 1){
-            //return missingValue
-            console.log(missingValue)
+            return missingValue
+            //console.log(missingValue)
         }else{
-            console.log(false)
+            //console.log(false)
+            return -1
         }
        
     }

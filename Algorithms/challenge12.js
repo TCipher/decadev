@@ -7,8 +7,13 @@
 // increment([{ val: 10 }, { val: 20}, { val: 30 }], 5) to return [{val: 15 }, { val: 25 }, { val: 35 }]
 
 function increment(arr, value) {
-    let result = arr.map(items => items.val += value)
-    console.log(result)
+    // let result  arr.map(items => items.val += value)
+    // console.log(result)
+  for(i = 0; i <arr.length; i++){
+    const obj = arr[i]
+    obj.val += value
+  }
+  console.log(arr)
 }
 
 module.exports = increment

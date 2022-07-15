@@ -8,14 +8,14 @@
 
 function replaceDivisible(x, y){
     let divisible = []
-   for(i =0; i < x.length; i++){
-    if(x[i] % y === 0){
-        divisible.push("isDivisible")
-    }else{
-        divisible.push(x[i])
+    for(i = 0; i < x.length; i++){
+        if(x[i] % y === 0){
+            divisible.push("isDivisible")
+        }else{
+            divisible.push(x[i])
+        }
     }
-}
-console.log(divisible)
+    console.log(divisible)
 }
 
 replaceDivisible([2,4,3,6,5], 3)

@@ -34,15 +34,15 @@ let converter = {
 }
 
 while(index < input.length){
-let current = input[index]
-let next = input[index + 1]
-if(converter[current] < converter[next]){
-    total += converter[next] - converter[current]
-    index += 2
-}else{
-    total += converter[current]
-    index++
-}
+    let curr = input[index]
+    let next = input[index + 1]
+    if(converter[curr] < converter[next]){
+        total += converter[next] - converter[curr]
+         index += 2
+    }else{
+        total += converter[curr]
+       index++
+    }
 }
 console.log(total)
 }

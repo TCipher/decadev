@@ -6,9 +6,9 @@
 // isDivisbleByN([21,3,5,6,3,6,7,4], 7) to return [21, 7]
 
 function isDivisbleByN(arr, n){
-    let divisible = arr.filter(num => num % n === 0)
-    return divisible
-    //console.log(divisible)
+   let divisible = arr.filter(values => values % n === 0)
+   //return divisible
+    console.log(divisible)
 }
 isDivisbleByN([1,3,5,6,3,6,7,4], 2) 
 isDivisbleByN([21,3,5,6,3,6,7,4], 7) 
