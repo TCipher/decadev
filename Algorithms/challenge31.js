@@ -10,4 +10,4 @@ function multiTable(number) {
     }
     return n.join('\n')
   }
-  console.log(multiTable(5))
+  

@@ -4,10 +4,10 @@
 //  with the one before. Otherwise, the element remains in the same place
 
 function bubbleSort(arr){
-   for(i =0; i < arr.length;i++){
+   for(i =0; i < arr.length; i++){
     for(j =0; j < arr.length; j++){
-        if(arr[j] > arr[j + 1]){
-            [arr[j], arr[j + 1]] =[arr[j + 1], arr[j]]
+        if([arr[j]] > arr[j + 1]){
+            [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]] 
         }
     }
    }

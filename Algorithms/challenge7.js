@@ -28,8 +28,8 @@
 // 1 <= n <= 10.
 
 function transpose(arr){
-  let result = arr[0].map((_,i) => arr.map(c => c[i]))
-   console.log(result)
+  let result = arr[0].map((_,i) => arr.map((c) => c[i]))
+  console.log(result)
 }
 let arr = [
        [5, 12, 17, 9, 3],

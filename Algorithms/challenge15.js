@@ -1,7 +1,7 @@
 function  noOfMultiples(noOfMultiples,number,divisor){
     let multiples = []
-    if(number% divisor === 0){
-        divisor =1
+    if(number % divisor === 0){
+        divisor = 1
     }
     for(i = 0; i < noOfMultiples; i++){
         let multiple = number * (divisor * (i + 1))

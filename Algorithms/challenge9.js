@@ -25,16 +25,16 @@
 // _Explanation: `Row 2, Column 4` is the index of the last index of 5. Remember that indexes are 0 based._
 
 function listSorting(needle, haystack) {
-    if(!Array.isArray(haystack[0])){
-        return haystack.lastIndexOf(needle)
+  if(!Array.isArray(haystack[0])){
+    return haystack[0].lastIndex(needle)
+  }
+  for(row = haystack.length -1; row >= 1; row--){
+    let col = haystack[row].lastIndex(needle)
+    if(col !== -1){
+        return [row,col]
     }
-    for(let row = haystack.length -1; row >= 0; row--){
-        let col = haystack[row].lastIndexOf(needle)
-        if(col !== -1){
-            return [row,col]
-        }
-    }
-    return -1
+  }
+  return -1
 }
 // function listSorting(needle, haystack) {
 //     if(!Array.isArray(haystack[0])){

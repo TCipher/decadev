@@ -10,9 +10,10 @@ function numSwap(number) {
    if(number % 2 !== 0){
     return false
    }
-   let swap = 0
+   
+   while(number > 0){
+      let swap = 0
     let x = 1
-   while(number !== 0){
     let num1 = number % 10
     let num2 = ((number - num1)/10)%10
     swap += x*(10 * num1 + num2)
